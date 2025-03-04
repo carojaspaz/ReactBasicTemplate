@@ -7,6 +7,9 @@ interface LoginRequestBody {
 }
 
 export const handlers = [
+  http.get(`${Config.urlBase}check`, async () => {
+    return HttpResponse.json({ message: 'ok' }, { status: 200 })
+  }),
   http.post<{}, LoginRequestBody>(`${Config.urlBase}auth/login`, async ({ request }) => {
     const { username, password } = await request.json()
     if (username === 'admin@gmail.com' && password === '!qa2ws3ed4rf') {
