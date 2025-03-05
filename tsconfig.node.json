@@ -27,7 +27,8 @@
       "@contexts/*": ["contexts/*"],
       "@components/*": ["components/*"],
       "@hooks/*": ["hooks/*"],
-    }
+    },
+    "types": ["@vitest/browser/providers/playwright"],
   },
   "include": ["vite.config.ts", "src"],
   "exclude": ["node_modules", "dist"]

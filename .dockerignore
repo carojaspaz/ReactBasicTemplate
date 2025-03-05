@@ -1,0 +1,38 @@
+# Ignorar node_modules y dependencias
+node_modules
+npm-debug.log
+yarn.lock
+pnpm-lock.yaml
+
+
+# Ignorar archivos de construcción local
+dist
+build
+.cache
+.vite
+
+# Ignorar archivos de entorno
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Ignorar configuraciones del editor
+.vscode/
+.idea/
+*.swp
+
+# Ignorar archivos del sistema y logs
+.DS_Store
+Thumbs.db
+*.log
+
+# Ignorar archivos de control de versiones
+.git
+.gitignore
+
+# Ignorar archivos relacionados con pruebas
+coverage/
+vitest.config.ts
+tests/
